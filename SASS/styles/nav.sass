@@ -1,0 +1,36 @@
+
+@mixin direction-nav
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+*
+  margin: 5px
+  padding: 0
+
+nav
+  @include direction-nav()
+
+.logo
+  @include direction-nav
+  align-items: flex-end
+  .pacifico-regular
+  font-family: Pacifico, cursive
+  font-weight: 400
+  font-size: 25px
+  font-style: normal
+  color: green
+
+.informacion
+  @include direction-nav
+  gap: 35px
+  font-family: "Roboto", sans-serif
+  font-weight: 400
+  font-style: normal
+
+.redes
+  @include direction-nav
+  gap: 15px
+  margin-right: 60px
+
+
