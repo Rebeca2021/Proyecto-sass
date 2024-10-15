@@ -1,39 +1,61 @@
 * {
-  margin: 5px;
-  padding: 0;
+  margin: 2px;
+  padding: 3px;
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
   align-items: center;
+  margin: 0px;
 }
 
 .logo {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-items: flex-end;
-  font-family: Pacifico, cursive;
-  font-weight: 400;
-  font-size: 25px;
-  font-style: normal;
-  color: green;
-}
-.informacion {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 35px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  justify-content: flex-start;
+  margin-left: 50px;
 }
 
-.redes {
+.informacion {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: baseline;
+  gap: 25px;
+}
+
+.actualidad, .unete, .contactanos, .big, .ecologia, .algo, .ia {
+  display: flex;
+  align-content: center;
+  padding: 8px;
+  justify-content: center;
   align-items: center;
-  gap: 15px;
-  margin-right: 60px;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: rgba(143, 184, 48, 0.4784313725);
+  width: 150px;
+}
+
+.ia {
+  width: 120px;
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #373737;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+button:hover {
+  background-color: #a1bba5;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+#redes {
+  display: flex;
+  justify-content: center;
+}
+#redes .facebook, #redes .instagram, #redes .x {
+  color: rgba(143, 184, 48, 0.4784313725);
 }/*# sourceMappingURL=nav.css.map */
