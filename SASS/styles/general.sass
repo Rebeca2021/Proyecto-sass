@@ -1,21 +1,33 @@
+@mixin estilos-titulo
+  display: flex
+  justify-content: center
+  padding-bottom: 5px
+  font-family: "Rowdies", sans-serif
+  font-weight: 500
+  font-size: 40px
+  font-style: normal
+  color: #7cbc73e5
 
-  *
+@mixin estilos-parrafos
+  font-family: "Roboto"
+  font-weight: 400
+  font-style: normal
+
+*
+body
+  background-color:#e7dab487
+*
 header
   padding: 50px
   margin-top: 1px
-  *
+
 .encabezado
   font-family: "Kanit", sans-serif
-  font-weight: 800
+  font-weight: 900
   font-style: normal
   font-size: 100px
   color: white
   margin-left: 40px
-
-.blockchain
-  display: flex
-  justify-content: center
-  align-items: flex-end
 
 .titulo
   display: grid
@@ -26,9 +38,8 @@ header
   color: #eaeceb
 
 .titulo
-  background-color:  #83bc8c7c
-  width: 200ox
-  height: 500px
+  background-color: #83bc8c7c
+  height: 400px
 
 .sostenible
   display: flex
@@ -51,7 +62,7 @@ header
   align-items: center
   font-size: 18px
   font-family: "Roboto", sans-serif
-  font-weight: 400
+  font-weight: 200
   font-style: normal
   background-color: #c2230a32
   box-shadow: 0 4px 8px rgb(0, 0, 0)
@@ -60,7 +71,7 @@ header
   height: 150px
 
 .hola > h6
-  color:#43c752
+  color:#2fd137
   display: flex
   justify-content: center
   align-content: center
@@ -68,10 +79,59 @@ header
   margin: 0px 80px 0 80px
   font-size: 30px
 
-main
-  display: grid
-  grid-template-columns: 1fr 1fr 1fr
-  padding: 80px
-  margin-right: 100px
+.imagen1, .imagen2, .imagen3
+  display: flex
+  justify-content: center
 
+.imagen1
+  display: flex
+  background-color: #cfe26158
+  height: 400px
+  margin: 20px 90px 100px 90px
+
+.imagen1 > img
+  margin-top: 10px
+  box-shadow: 0 4px 20px rgb(0, 0, 0)
+  border-radius: 80px
+
+.smart-farming
+  @include estilos-parrafos
+  width: 50%
+  padding: 10px 50px 20px 60px
+  font-size: 20px
+
+.smart-farming > .smart-titulo
+  @include estilos-titulo
+
+.imagen2
+  display: grid
+  grid-template-columns: 60fr 40fr
+  background-color: #43c7ab58
+  height: 450px
+  margin: 20px 90px 100px 90px
+
+
+.imagen2 > .informacion-biotecnologia
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  padding: 20px 20px 20px 60px
+
+.imagen2 > img
+  display: flex
+  margin-top: 45px
+  justify-content: center
+  box-shadow: 0 5px 30px rgb(0, 0, 0)
+  border-radius: 30px
+
+.biotecnoligia-titulo
+  padding: 0
+  margin: 0
+  @include estilos-titulo
+
+.informacion-biotecnologia
+  @include estilos-parrafos
+  width: 80%
+  font-size: 18px
 
